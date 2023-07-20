@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" type="module"></script>
+    <title>Validating Web Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Teko&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <h1>Validating Web Form</h1>
+    <form action="https://docs.google.com/spreadsheets/d/17wB0NUiACl7hb6RRVFLcGi33BshSD1callFhwe75Unc/edit#gid=0" target="_blank">
+        <label for="firstName">First Name</label><br>
+        <input type="text" name="firstName" id="firstName" placeholder="Enter your first name"><br>
+        <p class="firstName"></p>
+        <label for="lastName">Last Name</label><br>
+        <input type="text" name="lastName" id="lastName" placeholder="Enter your last name"><br>
+        <p class="alert lastName"></p>
+        <label for="email">Email</label><br>
+        <input type="text" name="email" id="email" placeholder="Enter your email"><br>
+        <p class="alert email"></p>
+        <label for="password">Password</label><br>
+        <input type="password" name="password" id="password" placeholder="Enter your password"><br>
+        <p class="alert password"></p>
+        <label for="telephone">Telephone</label><br>
+        <input type="text" name="telephone" id="telephone" placeholder="Enter your phone number"><br>
+        <p class="alert telephone"></p>
+        <label for="bio">Your bio</label><br>
+        <input type="text" name="bio" id="bio" placeholder="Enter your bio"><br>
+        <p class="alert bio"></p>
+        <input type="submit" value="Submit" id="button">
+    </form>
+</body>
+</html>
