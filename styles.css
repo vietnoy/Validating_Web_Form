@@ -64,17 +64,19 @@ form {
     }
 
     #button {
-        width: 45.5px;
-        height: 30px;
+        width: 60px;
+        height: 40px;
         font-size: 10px;
+        background-color:white;
+        color:black;
     }
 
     label {
-        width: 300px;
+        width: 250px;
         font-size: 20px;
     }
 
     input {
-        width: 300px;
+        width: 250px;
     }
 }
