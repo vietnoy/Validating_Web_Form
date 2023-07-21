@@ -172,18 +172,18 @@ function updateSubmitButton() {
     }
 };
 
-submit.addEventListener('clicked',() =>  {
-        fetch("https://api.apispreadsheets.com/data/cHZYHjPYCD4f80Z4/", {
-        method: "POST",
-        body: JSON.stringify({"data": {"bio":"","email":"","password":"","full_name":"","last_name":"","telephone":""}}),
-        }).then(res =>{
-            if (res.status === 201){
-                alert('Your data have been submited :)');
-            }
-            else{
-                alert('Error x_x');
-            }
-        }
-        )
-    }
-);
+const form = document.querySelector('#myform');
+
+form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    
+    const formData = new FormData(form);
+
+    fetch('https://script.google.com/macros/s/AKfycbw7NFnxP5U0UVuMtCLGoc0RB2kQlb1lhBGlIviAt9TpmNaTovThDPyJAKSjHpyiR31h/exec', {
+        method: 'POST',
+        body: formData,
+    })
+
+    window.open('success.html');
+});
+
