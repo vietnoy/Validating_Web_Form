@@ -69,6 +69,8 @@ form {
         font-size: 10px;
         background-color:white;
         color:black;
+        align-self: flex-start;
+        font: inherit;
     }
 
     label {
@@ -77,6 +79,6 @@ form {
     }
 
     input {
-        width: 250px;
+        width: 150px;
     }
 }
